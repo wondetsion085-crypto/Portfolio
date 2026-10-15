@@ -1,0 +1,254 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio | Software Engineering Student</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">MyPortfolio<span>.</span></a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" class="theme-toggle"
+                    aria-label="Switch color theme">
+                ☀️
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <p class="greeting">HELLO, WORLD! 👋</p>
+
+                <h1>I'm a <span>Software Engineering Student</span></h1>
+
+                <p class="hero-description">
+                    Welcome to my personal portfolio. I'm a third-year
+                    Software Engineering student who is learning to build
+                    useful, creative, and user-friendly websites.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View My Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="profile-icon">👨‍💻</div>
+                <h2>Future Software Engineer</h2>
+                <p>Learning • Building • Improving</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="section-label">GET TO KNOW ME</p>
+                <h2>About <span>Me</span></h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-icon">🎓</div>
+
+                <div>
+                    <h3>Hello! I'm a Software Engineering Student.</h3>
+
+                    <p>
+                        I am a third-year Software Engineering student
+                        interested in learning how software applications
+                        and websites are designed and developed.
+                    </p>
+
+                    <p>
+                        I am currently developing my technical skills
+                        through my university studies and personal
+                        practice. My goal is to become a skilled software
+                        engineer who can solve real-world problems
+                        through technology.
+                    </p>
+
+                    <p>
+                        This portfolio represents my learning journey,
+                        my academic work, and the projects I develop
+                        as I improve my abilities.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section alternate">
+            <div class="section-heading">
+                <p class="section-label">WHAT I'M LEARNING</p>
+                <h2>My <span>Skills</span></h2>
+                <p>
+                    These are the technologies I am learning and
+                    practicing as a Software Engineering student.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML</h3>
+                    <p>Learning to structure web pages.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>CSS</h3>
+                    <p>Learning to style websites and create layouts.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <p>Planning to learn interactive web development.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">🧩</div>
+                    <h3>Problem Solving</h3>
+                    <p>Developing logical thinking through my studies.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="section-label">MY LEARNING JOURNEY</p>
+                <h2>My <span>Projects</span></h2>
+                <p>
+                    Here are some projects I can develop as I practice
+                    software and web development.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image project-one">🌐</div>
+
+                    <div class="project-info">
+                        <p class="project-number">PROJECT 01</p>
+                        <h3>Personal Portfolio</h3>
+
+                        <p>
+                            A personal website introducing me, my
+                            education, my interests, and my learning journey.
+                        </p>
+
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image project-two">📝</div>
+
+                    <div class="project-info">
+                        <p class="project-number">PROJECT 02</p>
+                        <h3>Task Manager</h3>
+
+                        <p>
+                            A planned application for organizing tasks
+                            and tracking daily activities.
+                        </p>
+
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Web Design</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image project-three">🎓</div>
+
+                    <div class="project-info">
+                        <p class="project-number">PROJECT 03</p>
+                        <h3>Student Information System</h3>
+
+                        <p>
+                            A planned student project for organizing
+                            student information and academic records.
+                        </p>
+
+                        <span class="tag">Software Engineering</span>
+                    </div>
+                </article>
+            </div>
+
+            <p class="project-note">
+                Note: Projects marked as planned are ideas for future
+                development, not completed applications.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section alternate">
+            <div class="section-heading">
+                <p class="section-label">LET'S CONNECT</p>
+                <h2>Contact <span>Me</span></h2>
+                <p>
+                    Have a question or want to connect? You can contact me
+                    using the email link below.
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+
+                <h3>Get in Touch</h3>
+
+                <p>
+                    I'm interested in learning, sharing ideas, and
+                    connecting with people who love technology.
+                </p>
+
+                <!-- Replace this address with your own email -->
+                <a href="mailto:yourname@example.com" class="btn">
+                    Email Me
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; <span id="year"></span> My Portfolio.
+            Created as a learning project.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
