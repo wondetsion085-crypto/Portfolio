@@ -1,254 +1,94 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Portfolio | Software Engineering Student</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tsi's personal portfolio website">
+  <title>Tsi | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header class="header">
+    <a class="theme-logo" href="#home" aria-label="Tsi home" title="Toggle theme">
+      <span id="themeIcon">☀</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="navbar" id="navbar">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <a href="#home" class="logo">MyPortfolio<span>.</span></a>
+  <main>
+    <section class="home section" id="home">
+      <div class="home-content">
+        <p class="intro-label">My name is</p>
+        <h1><span class="bracket">&lt;</span><span id="typedName">TSI</span><span class="bracket">&gt;</span></h1>
+        <p class="code-comment">// THIS IS MY PORTFOLIO...{Version 2.0}</p>
+        <div class="social-links" aria-label="Social links">
+          <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.08c-3.1.67-3.75-1.32-3.75-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.71 2.62 1.22 3.26.93.1-.72.39-1.22.71-1.5-2.47-.28-5.07-1.24-5.07-5.5 0-1.21.43-2.2 1.15-2.98-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.98 0 4.27-2.6 5.21-5.08 5.49.4.35.75 1.02.75 2.06V22c0 .29.2.63.77.52A11.1 11.1 0 0 0 12 .9Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2.3"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2.3"/><circle cx="18" cy="6.4" r="1.2"/></svg>
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noreferrer" aria-label="X" title="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.78 7.75L23.2 22h-6.25l-4.9-7.43L5.55 22H2.4l7.25-8.28L1.8 2h6.4l4.43 6.8L18.9 2Zm-1.1 17.9h1.73L7.27 3.98H5.41L17.8 19.9Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4ZM3.3 9h3.8v12H3.3V9Zm6.2 0h3.65v1.64h.05A4 4 0 0 1 16.8 8.6c3.9 0 4.62 2.56 4.62 5.9V21h-3.8v-5.77c0-1.38-.03-3.16-1.93-3.16-1.94 0-2.24 1.51-2.24 3.06V21H9.5V9Z"/></svg>
+          </a>
+        </div>
+        <a class="resume-btn" href="resume.txt" download>Download Resume</a>
+      </div>
 
-            <button class="menu-toggle" id="menu-toggle"
-                    aria-label="Toggle navigation"
-                    aria-expanded="false">
-                ☰
-            </button>
+      <div class="hero-art" aria-label="Illustration of a person coding at a laptop" role="img">
+        <svg class="coding-illustration" viewBox="0 0 500 390" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path class="blob" d="M90 80c-36 0-58 25-58 53 0 25 18 35 45 36 21 1 23 23 1 29-33 9-45 36-36 64 10 32 40 40 73 38h267c43 0 68-25 68-55 0-25-14-42-37-48-21-5-20-23 2-31 26-10 35-37 22-61-13-23-36-32-66-32H90Z"/>
+          <path d="M143 306h225l20 21H121z" fill="#a77b5c"/>
+          <rect x="115" y="324" width="286" height="13" rx="6" fill="#d59c72"/>
+          <rect x="130" y="329" width="246" height="4" rx="2" fill="#80563f"/>
+          <!-- plant -->
+          <path d="M146 301v-29m0 13c-18-2-21-13-18-22 15 1 22 10 18 22m2-6c1-18 12-24 22-22 0 14-9 23-22 22" fill="#42d8c7"/>
+          <path d="M135 299h24l-3 20h-18z" fill="#a46f4c"/>
+          <!-- person -->
+          <path d="M186 186c-17 15-31 46-31 79l14 43h159l10-44c-2-32-16-61-36-78z" fill="#f2bf4c"/>
+          <path d="M202 186h78l24 80H178z" fill="#e9d9ac"/>
+          <path d="M220 177h42v48c-10 13-32 12-42 0z" fill="#e6a078"/>
+          <ellipse cx="240" cy="134" rx="55" ry="65" fill="#f3b18d"/>
+          <!-- hair -->
+          <path d="M186 137c-11-35 6-77 45-83 30-5 61 12 66 42 4 21-4 38-11 48l-8-40c-19 9-44 4-61-10-4 21-17 33-31 43Z" fill="#10172e"/>
+          <path d="M187 110c-8-20 5-43 22-51-2 17 9 25 26 26 20 2 38-7 48-22 15 28-2 47-17 57-15-8-22-23-24-37-10 20-28 29-55 27Z" fill="#11182e"/>
+          <ellipse cx="220" cy="137" rx="5" ry="7" fill="#20233a"/>
+          <ellipse cx="260" cy="137" rx="5" ry="7" fill="#20233a"/>
+          <path d="M227 164q13 8 26-1" fill="none" stroke="#c96f62" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="204" cy="153" r="8" fill="#ed8d83" opacity=".6"/><circle cx="276" cy="153" r="8" fill="#ed8d83" opacity=".6"/>
+          <!-- laptop -->
+          <path d="M155 241h171l-12 88H168z" fill="#10172f"/>
+          <path d="M155 241h171l-3 12H158z" fill="#252c4a"/>
+          <circle cx="241" cy="287" r="15" fill="#202b4d"/>
+          <path d="M241 275a12 12 0 0 0 0 24 10 10 0 0 1 0-24Z" fill="#fff"/>
+          <!-- code card -->
+          <path d="M330 76h108a8 8 0 0 1 8 8v88h-116z" fill="#11172c"/>
+          <rect x="330" y="76" width="116" height="14" rx="4" fill="#d9dce6"/>
+          <circle cx="340" cy="83" r="2" fill="#ff7190"/><circle cx="347" cy="83" r="2" fill="#ffcf5c"/><circle cx="354" cy="83" r="2" fill="#4ce1d2"/>
+          <path d="M343 104h80m-80 13h58m-58 13h73m-73 13h45" stroke-linecap="round" stroke-width="5" fill="none"/>
+          <path d="M343 104h36m-36 26h27m-27 13h45" stroke="#16e6e6" stroke-linecap="round" stroke-width="5" fill="none"/>
+          <path d="M383 117h40m-12 13h5" stroke="#bd83ff" stroke-linecap="round" stroke-width="5" fill="none"/>
+          <!-- coffee -->
+          <path d="M354 297h28v24h-28z" fill="#e04c5b"/><path d="M382 302h9a8 8 0 0 1 0 15h-9" fill="none" stroke="#e04c5b" stroke-width="5"/>
+          <path d="M361 290c-5-8 5-8 0-15m10 15c-5-8 5-8 0-15" stroke="#d8dce7" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </section>
 
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <button id="theme-toggle" class="theme-toggle"
-                    aria-label="Switch color theme">
-                ☀️
-            </button>
-        </nav>
-    </header>
-
-    <main>
-
-        <!-- Home Section -->
-        <section id="home" class="hero section">
-            <div class="hero-content">
-                <p class="greeting">HELLO, WORLD! 👋</p>
-
-                <h1>I'm a <span>Software Engineering Student</span></h1>
-
-                <p class="hero-description">
-                    Welcome to my personal portfolio. I'm a third-year
-                    Software Engineering student who is learning to build
-                    useful, creative, and user-friendly websites.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn">View My Projects</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
-                </div>
-            </div>
-
-            <div class="hero-card">
-                <div class="profile-icon">👨‍💻</div>
-                <h2>Future Software Engineer</h2>
-                <p>Learning • Building • Improving</p>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="section-heading">
-                <p class="section-label">GET TO KNOW ME</p>
-                <h2>About <span>Me</span></h2>
-            </div>
-
-            <div class="about-content">
-                <div class="about-icon">🎓</div>
-
-                <div>
-                    <h3>Hello! I'm a Software Engineering Student.</h3>
-
-                    <p>
-                        I am a third-year Software Engineering student
-                        interested in learning how software applications
-                        and websites are designed and developed.
-                    </p>
-
-                    <p>
-                        I am currently developing my technical skills
-                        through my university studies and personal
-                        practice. My goal is to become a skilled software
-                        engineer who can solve real-world problems
-                        through technology.
-                    </p>
-
-                    <p>
-                        This portfolio represents my learning journey,
-                        my academic work, and the projects I develop
-                        as I improve my abilities.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section alternate">
-            <div class="section-heading">
-                <p class="section-label">WHAT I'M LEARNING</p>
-                <h2>My <span>Skills</span></h2>
-                <p>
-                    These are the technologies I am learning and
-                    practicing as a Software Engineering student.
-                </p>
-            </div>
-
-            <div class="skills-grid">
-                <article class="skill-card">
-                    <div class="skill-icon">🌐</div>
-                    <h3>HTML</h3>
-                    <p>Learning to structure web pages.</p>
-                </article>
-
-                <article class="skill-card">
-                    <div class="skill-icon">🎨</div>
-                    <h3>CSS</h3>
-                    <p>Learning to style websites and create layouts.</p>
-                </article>
-
-                <article class="skill-card">
-                    <div class="skill-icon">⚡</div>
-                    <h3>JavaScript</h3>
-                    <p>Planning to learn interactive web development.</p>
-                </article>
-
-                <article class="skill-card">
-                    <div class="skill-icon">🧩</div>
-                    <h3>Problem Solving</h3>
-                    <p>Developing logical thinking through my studies.</p>
-                </article>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="section-heading">
-                <p class="section-label">MY LEARNING JOURNEY</p>
-                <h2>My <span>Projects</span></h2>
-                <p>
-                    Here are some projects I can develop as I practice
-                    software and web development.
-                </p>
-            </div>
-
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-image project-one">🌐</div>
-
-                    <div class="project-info">
-                        <p class="project-number">PROJECT 01</p>
-                        <h3>Personal Portfolio</h3>
-
-                        <p>
-                            A personal website introducing me, my
-                            education, my interests, and my learning journey.
-                        </p>
-
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image project-two">📝</div>
-
-                    <div class="project-info">
-                        <p class="project-number">PROJECT 02</p>
-                        <h3>Task Manager</h3>
-
-                        <p>
-                            A planned application for organizing tasks
-                            and tracking daily activities.
-                        </p>
-
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Web Design</span>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image project-three">🎓</div>
-
-                    <div class="project-info">
-                        <p class="project-number">PROJECT 03</p>
-                        <h3>Student Information System</h3>
-
-                        <p>
-                            A planned student project for organizing
-                            student information and academic records.
-                        </p>
-
-                        <span class="tag">Software Engineering</span>
-                    </div>
-                </article>
-            </div>
-
-            <p class="project-note">
-                Note: Projects marked as planned are ideas for future
-                development, not completed applications.
-            </p>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section alternate">
-            <div class="section-heading">
-                <p class="section-label">LET'S CONNECT</p>
-                <h2>Contact <span>Me</span></h2>
-                <p>
-                    Have a question or want to connect? You can contact me
-                    using the email link below.
-                </p>
-            </div>
-
-            <div class="contact-card">
-                <div class="contact-icon">✉️</div>
-
-                <h3>Get in Touch</h3>
-
-                <p>
-                    I'm interested in learning, sharing ideas, and
-                    connecting with people who love technology.
-                </p>
-
-                <!-- Replace this address with your own email -->
-                <a href="mailto:yourname@example.com" class="btn">
-                    Email Me
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>
-            &copy; <span id="year"></span> My Portfolio.
-            Created as a learning project.
-        </p>
-    </footer>
-
-    <script src="script.js"></script>
-
-</body>
-</html>
-```
+    <section class="content-section" id="about">
+      <p class="section-tag">// A LITTLE ABOUT ME</p>
+      <h2>About <span>Me</span></h2>
+      <p>Hi! I'm Tsi. I'm building my skills in web development and enjoy turning ideas into simple, useful websites. This portfolio is where I'll share what I'm learning and creating.</p>
+    </section>    
+    </body>
+    </html>
