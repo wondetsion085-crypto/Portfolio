@@ -66,3 +66,7 @@ h1 { color: var(--cyan); font-size: clamp(42px, 5.2vw, 66px); line-height: 1.25;
 .section-tag { color: var(--cyan); font-size: 14px; margin-bottom: 12px; }
 h2 { font-size: clamp(32px, 4vw, 46px); line-height: 1.2; margin-bottom: 22px; }
 h2 span { color: var(--cyan); }
+.content-section > p:not(.section-tag):not(.small-note) { max-width: 760px; color: #b9c4d3; }
+.skill-list { display: grid; gap: 22px; max-width: 700px; }
+.skill > div:first-child { display: flex; justify-content: space-between; color: #dce5ef; margin-bottom: 8px; }
+.skill > div:first-child span:last-child { color: var(--muted); font-size: 13px; }
