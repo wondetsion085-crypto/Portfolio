@@ -70,3 +70,13 @@ h2 span { color: var(--cyan); }
 .skill-list { display: grid; gap: 22px; max-width: 700px; }
 .skill > div:first-child { display: flex; justify-content: space-between; color: #dce5ef; margin-bottom: 8px; }
 .skill > div:first-child span:last-child { color: var(--muted); font-size: 13px; }
+skill > div:first-child span:last-child { color: var(--muted); font-size: 13px; }
+.track { height: 9px; background: #343b49; border-radius: 10px; overflow: hidden; }
+.track span { display: block; height: 100%; background: var(--cyan); border-radius: inherit; box-shadow: 0 0 12px var(--shadow); }
+.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.project-card { padding: 24px; background: var(--panel); border: 1px solid rgba(0,238,238,.22); border-radius: 14px; transition: .2s; }
+.project-card:hover { transform: translateY(-5px); border-color: var(--cyan); }
+.project-card > span { color: var(--cyan); font-size: 12px; }
+.project-card h3 { font-size: 19px; margin: 14px 0 8px; }
+.project-card p { color: #b9c4d3; font-size: 14px; }
+.contact-section .resume-btn { margin-top: 24px; }
