@@ -80,3 +80,17 @@ skill > div:first-child span:last-child { color: var(--muted); font-size: 13px; 
 .project-card h3 { font-size: 19px; margin: 14px 0 8px; }
 .project-card p { color: #b9c4d3; font-size: 14px; }
 .contact-section .resume-btn { margin-top: 24px; }
+small-note { margin-top: 18px; color: var(--muted); font-size: 12px; }
+footer { padding: 24px; text-align: center; color: var(--muted); font-size: 13px; border-top: 1px solid rgba(0,238,238,.18); }
+body.light-theme {
+  --bg: #f3f8fb; --header: #e3edf6; --panel: #ffffff; --text: #18232d;
+  --muted: #60788d; --line: rgba(0, 160, 175, .8); --shadow: rgba(0, 180, 190, .18);
+  --cyan: #008e9b; --cyan-dark: #007c89;
+}
+body.light-theme .content-section > p:not(.section-tag):not(.small-note),
+body.light-theme .project-card p { color: #4c6071; }
+body.light-theme .skill > div:first-child { color: #263746; }
+body.light-theme .track { background: #dce7ec; }
+body.light-theme .resume-btn { color: #fff; background: var(--cyan); }
+body.light-theme .social-links a:hover { color: white; }
+@media (max-width: 760px) {
