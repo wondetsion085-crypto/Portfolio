@@ -94,3 +94,25 @@ body.light-theme .track { background: #dce7ec; }
 body.light-theme .resume-btn { color: #fff; background: var(--cyan); }
 body.light-theme .social-links a:hover { color: white; }
 @media (max-width: 760px) {
+  ader { min-height: 82px; padding: 12px 6%; }
+  .theme-logo { width: 50px; height: 50px; flex-basis: 50px; }
+  .menu-toggle { display: block; margin-left: auto; }
+  .navbar { display: none; position: absolute; top: 81px; left: 0; right: 0; padding: 16px 6% 22px; background: var(--header); border-bottom: 2px solid var(--cyan); flex-direction: column; align-items: stretch; gap: 5px; }
+  .navbar.open { display: flex; }
+  .navbar a { padding: 10px 8px; }
+  .home { grid-template-columns: 1fr; padding: 55px 7% 65px; gap: 35px; }
+  .home-content { order: 1; }
+  .hero-art { order: 2; }
+  .coding-illustration { max-width: 380px; }
+  h1 { letter-spacing: -2px; }
+  .social-links { gap: 17px; }
+  social-links a { width: 49px; height: 49px; }
+  .content-section { padding: 65px 7%; }
+  .project-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 390px) {
+  .social-links { gap: 12px; }
+  .social-links a { width: 44px; height: 44px; }
+  .social-links svg { width: 24px; height: 24px; }
+  .code-comment { font-size: 11px; }  
+  }
