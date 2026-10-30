@@ -8,3 +8,12 @@ const themeIcon = document.getElementById('themeIcon');
     menuToggle.setAttribute('aria-expanded', String(isOpen));
     menuToggle.textcontent=isopen ? '✕' : '☰';
 });
+ 
+ navbar.querySelectorAll("a").forEach(link => {
+    link.addEventListener( 'click',() => {
+       navbar.classList.remove('open');
+        menuToggle.setAttribute("aria-expanded", 'FALSE');
+        menuToggle.textContent = '☰';
+  });
+
+
