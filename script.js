@@ -15,5 +15,8 @@ const themeIcon = document.getElementById('themeIcon');
         menuToggle.setAttribute("aria-expanded", 'FALSE');
         menuToggle.textContent = '☰';
   });
+  const section = document.querySelectorAll('main section[id]');
+  const navlink = document.querySelectorAll('navbar a');
+ const observer  = new IntersectionObserver(entries => {
 
 
