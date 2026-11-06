@@ -19,4 +19,10 @@ const themeIcon = document.getElementById('themeIcon');
   const navlink = document.querySelectorAll('navbar a');
  const observer  = new IntersectionObserver(entries => {
 
+   const sections = document.querySelectorAll'main section[id]');
+const navLinks = document.querySelectorAll'.(navbar a');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+   
+
 
