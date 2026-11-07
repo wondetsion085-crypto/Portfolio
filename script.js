@@ -23,6 +23,8 @@ const themeIcon = document.getElementById('themeIcon');
 const navLinks = document.querySelectorAll'.(navbar a');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
+   if (entry.isIntersecting) {
+      navLinks.forEach(link => {
    
 
 
