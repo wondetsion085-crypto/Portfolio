@@ -28,7 +28,9 @@ const observer = new IntersectionObserver(entries => {
           link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
       });
     }
-      
+      });
+}, { rootMargin: '-35% 0px -55% 0px' });
+sections.forEach(section => observer.observe(section));
 
    
 
